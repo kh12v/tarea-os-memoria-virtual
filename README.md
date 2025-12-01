@@ -9,24 +9,15 @@ Repositorio que contiene la tarea 2 para el ramo "Sistemas Operativos".
 
 **Como usar el programa respecto a la Parte 1:**
 
-Actividad 1:
-
     Hay 2 formas de compilar el código:
 
-    1) "gcc testBarrera.c -o testBarrera"
-    2) "gcc -pthread testBarrera.c -o testBarrera"
+    1) "gcc barrera.c -o barrera"
+    2) "gcc -pthread barrera.c -o barrera"
 
-    Donde "-pthread" indica al compilador que se usen las bibliotecas
-    POSIX.
-    
-    Luego se puede ejecutar el programa con:
+    Donde "-pthread" indica al compilador que se usen 
+    las bibliotecas de hilos POSIX.
 
-    "./testBarrera"
-
-Actividad 2:
-
-    Luego de compilar el código con "gcc barrera.c -o barrera",
-    hay 2 formas de ejecutar el programa.
+    Luego, hay 2 formas de ejecutar el programa:
 
     1) "./barrera"   (sin argumentos)
     2) "./barrera <N> <E>".
@@ -34,7 +25,7 @@ Actividad 2:
     Donde <N> es la cantidad de hebras y <E> es la cantidad de etapas.
 
     Por defecto, la cantidad de hebras será 5 y la cantidad de etapas será 4
-    si no se ingresan argumentos al ejecutar.
+    si no se ingresan argumentos.
 
 **Como usar el programa respecto a la Parte 2:**
 
@@ -46,7 +37,7 @@ Actividad 2:
 
     Donde <n_marcos> es la cantidad de marcos,
     <t_marco> es el tamaño de cada marco,
-    <traza.txt> el archivo donde se leen las referencias
+    <traza.txt> es el archivo donde se leen las referencias
     y "verbose" para mostrar información adicional al ejecutar.
 
 **Notas:**
