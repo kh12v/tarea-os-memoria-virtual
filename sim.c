@@ -14,10 +14,10 @@ typedef struct {
 int main(int argc, char *argv[]) {
     if (argc < 4 || argc > 5) {
         fprintf(stderr, "Error: Número incorrecto de argumentos.\n");
-        printf("Uso: ./sim <Nmarcos> <tamañomarco> [--verbose] <traza.txt>\n");
+        printf("Uso: ./sim <Nmarcos> <tamañomarco> [--verbose] <trace.txt>\n");
         printf("Ejemplos:\n");
-        printf("  ./sim 16 256 traza.txt\n");
-        printf("  ./sim 4 1024 --verbose traza.txt\n");
+        printf("  ./sim 16 256 trace1.txt\n");
+        printf("  ./sim 4 1024 --verbose trace2.txt\n");
         return 1;
     }
 
@@ -42,10 +42,10 @@ int main(int argc, char *argv[]) {
             nombre_archivo = argv[3];
         } else {
             fprintf(stderr, "Error: Argumento opcional desconocido '%s'.\n", argv[3]);
-            printf("Uso: ./sim <Nmarcos> <tamañomarco> [--verbose] <traza.txt>\n");
+            printf("Uso: ./sim <Nmarcos> <tamañomarco> [--verbose] <trace.txt>\n");
             printf("Ejemplos:\n");
-            printf("  ./sim 16 256 traza.txt\n");
-            printf("  ./sim 4 1024 --verbose traza.txt\n");
+            printf("  ./sim 16 256 trace1.txt\n");
+            printf("  ./sim 4 1024 --verbose trace2.txt\n");
             return 1;
         }
     } else {
